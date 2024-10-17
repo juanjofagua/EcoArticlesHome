@@ -1,0 +1,245 @@
+.inicio {
+    background-image: url(../img/encuentra.jpg);
+}
+
+.header {
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 70rem;
+
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 70rem;
+            }
+        }
+
+    }
+
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 60rem;
+    }
+}
+
+//Estilo para subrayar textos
+
+.subr {
+    background-color: #00ff6a;
+}
+
+//Estilo text justificado
+
+.justificado {
+    margin-left: 15px;
+    text-transform: initial;
+}
+
+//logo ECOARTICLESHOME
+
+.logoeco{
+    width: 200px;
+    height: auto;
+}
+
+.logoeco>a{
+    width: 100%;
+    height: auto;
+}
+
+//Color barra de navegacion
+
+.nav-color ul li a:hover {
+    color: #00ff6a;
+}
+
+.titulo-1{
+    flex-direction: row;
+}
+//Mayusculas del producto
+
+.letra-producto {
+    text-transform: capitalize;
+}
+
+
+
+//Estilos para Nosotros.html
+
+.Integrantes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+    transform: translateY(-15px);
+}
+
+.card .cabeza {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .cabeza .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: $grisOscuro;
+    bottom: 0;
+}
+
+
+.card .cabeza .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card .cabeza .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .descripcion {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+}
+
+.card .descripcion h3 {
+    color: #05383a;
+}
+
+.card .descripcion h4 {
+    color: #1c5a5c
+}
+
+.card .descripcion p {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.card .comunicacion {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .comunicacion a {
+    text-decoration: none;
+    color: #fff;
+    background: #157579;
+    padding: 2px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card .comunicacion a:hover {
+    background: #0b6164;
+}
+
+
+//Estilos para nosotros.html
+
+.float-wa {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+//FORMULARIO
+
+#formulario {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.informacion {
+    display: grid;
+    margin: 20PX;
+}
